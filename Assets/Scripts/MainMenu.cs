@@ -21,17 +21,24 @@ public class MainMenu : MonoBehaviour
         
     }
 
-    public void StartTimedMode()
-    {
-        GameManager.Instance.isTimedMode = true;
-        SceneManager.LoadScene(1);
-    }
-
-    public void StartFreeMode()
+    public void StartPlayground()
     {
         GameManager.Instance.isTimedMode = false;
         SceneManager.LoadScene(1);
     }
+
+    public void StartChap()
+    {
+        GameManager.Instance.isTimedMode = false;
+        SceneManager.LoadScene(2);
+    }
+
+    public void StartJohn()
+    {
+        GameManager.Instance.isTimedMode = false;
+        SceneManager.LoadScene(3);
+    }
+
 
     public void QuitApplication()
     {
