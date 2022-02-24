@@ -2,16 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class forklift : MonoBehaviour
+public class forklift : OutlinedInteractable
 {
 
-
-   Animator anim;
-    // Start is called before the first frame update
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-    }
+    public AudioClip forkliftSound = default;
+    public Animator animForks;
+    public Animator animPallet;
+    private bool forkliftDone = false;
 
     // Update is called once per frame
     void Update()
@@ -19,10 +16,21 @@ public class forklift : MonoBehaviour
         
     }
 
+    public override void OnInteract()
+    {
+        if (!forkliftDone)
+        {
+            playAnim();
+        }
+    }
+
 
     public void playAnim()
     {
-        anim.SetTrigger("playforklift");
-        anim.SetTrigger("liftpallet");
+        forkliftDone = true;
+        animForks.SetTrigger("playforklift");
+        animForks.SetTrigger("liftpallet");
+        animPallet.SetTrigger("liftpallet");
+        AudioSource.PlayClipAtPoint(forkliftSound, transform.position);
     }
 }
