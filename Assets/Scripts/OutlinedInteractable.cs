@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Outline))]
-public class TestInteractable : PhysicsObject
+public class OutlinedInteractable : Interactable
 {
     private Outline _outline;
 
@@ -31,7 +31,8 @@ public class TestInteractable : PhysicsObject
         if (_outline.OutlineColor == Color.red)
         {
             _outline.OutlineColor = Color.white;
-        } else
+        }
+        else
         {
             _outline.OutlineColor = Color.red;
         }
