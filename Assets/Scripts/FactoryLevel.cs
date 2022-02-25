@@ -6,32 +6,35 @@ public class FactoryLevel : MonoBehaviour
 {
     public List<GameObject> papers = new List<GameObject>();
     public int paperCountToWin = 3;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
+    private static FactoryLevel _instance;
 
-        
-    }
+    public static FactoryLevel Instance { get { return _instance; } }
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void Awake()
     {
-        if (collision.gameObject.tag == "Paper")
+        if (_instance != null && _instance != this)
         {
-            foreach (GameObject paper in papers)
-            {
-                if (collision.gameObject.GetInstanceID() == paper.GetInstanceID()) return;
-            }
-            papers.Add(collision.gameObject);
-            if (papers.Count == paperCountToWin)
-            {
-                SceneManager.LoadScene(3);
-            }
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+    }
+
+    public void AddPaper(Paper addedPaper)
+    {
+        foreach (GameObject paper in papers)
+        {
+            if (addedPaper.gameObject.GetInstanceID() == paper.GetInstanceID()) return;
+        }
+        papers.Add(addedPaper.gameObject);
+        addedPaper.gameObject.SetActive(false);
+        if (papers.Count == paperCountToWin)
+        {
+            SceneManager.LoadScene(3);
         }
     }
 }
