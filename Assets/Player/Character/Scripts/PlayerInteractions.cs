@@ -143,7 +143,7 @@ public class PlayerInteractions : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 //Rotation
-                //lookRot = Quaternion.LookRotation(mainCamera.transform.position - pickupRB.position);
+                lookRot = Quaternion.LookRotation(mainCamera.transform.position - pickupRB.position);
                 lookRot = Quaternion.Slerp(mainCamera.transform.rotation, pickupRB.rotation, rotationSpeed * Time.fixedDeltaTime);
                 pickupRB.MoveRotation(lookRot);
             }

@@ -9,6 +9,7 @@ TagManager:
   - Footsteps/WOOD
   - Footsteps/GRASS
   - Paper
+  - HumanMeat
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - Interactable
   - Water
   - UI
-  - 
-  - 
+  - IgnorePlayer
+  - Player
   - 
   - 
   - 
