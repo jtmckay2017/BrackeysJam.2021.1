@@ -44,7 +44,7 @@ public class FactoryLevel : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (papers.Count == paperCountToWin)
+        if (papers.Count >= paperCountToWin)
         {
             StartCoroutine(ChangeLevel());
         }
