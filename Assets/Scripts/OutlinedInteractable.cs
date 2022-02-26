@@ -6,9 +6,10 @@ using UnityEngine;
 public class OutlinedInteractable : Interactable
 {
     private Outline _outline;
-
+    [SerializeField, Range(0f, 10f)]
+    private float outlineWidth = 4f;
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
         _outline = GetComponent<Outline>();
         _outline.OutlineWidth = 0f;
@@ -23,7 +24,7 @@ public class OutlinedInteractable : Interactable
 
     public override void OnFocus()
     {
-        _outline.OutlineWidth = 4f;
+        _outline.OutlineWidth = outlineWidth;
     }
 
     public override void OnInteract()
