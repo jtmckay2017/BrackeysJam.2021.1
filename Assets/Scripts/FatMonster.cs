@@ -23,7 +23,9 @@ public class FatMonster : MonoBehaviour
         if (other.gameObject.tag == "HumanMeat")
         {
             AudioSource.PlayClipAtPoint(eatSound, transform.position);
+            HighriseLevel.Instance.AddBody(other.gameObject);
             GameObject.Destroy(other.gameObject);
         }
+
     }
 }
