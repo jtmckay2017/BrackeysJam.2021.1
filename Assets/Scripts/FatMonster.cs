@@ -22,7 +22,7 @@ public class FatMonster : MonoBehaviour
     {
         if (other.gameObject.tag == "HumanMeat")
         {
-            AudioSource.PlayClipAtPoint(eatSound, transform.position, 2);
+            AudioSource.PlayClipAtPoint(eatSound, transform.position);
             GameObject.Destroy(other.gameObject);
         }
     }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000017603876, g: 0.000000029145577, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.000017603921, g: 0.000000029148318, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -787,15 +787,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4365203187689882457, guid: 959d3cfa173dbd843b62dbc79196b025, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.924419
+      value: -77.49
       objectReference: {fileID: 0}
     - target: {fileID: 4365203187689882457, guid: 959d3cfa173dbd843b62dbc79196b025, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.58
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 4365203187689882457, guid: 959d3cfa173dbd843b62dbc79196b025, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.089512
+      value: 18.6
       objectReference: {fileID: 0}
     - target: {fileID: 4365203187689882457, guid: 959d3cfa173dbd843b62dbc79196b025, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6309,7 +6309,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2084af4e33ad84644b92012476724a52, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 97cd5eb9e15389c4dbf5b43da766418f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.464
   m_Pitch: 1
