@@ -3,51 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class FactoryLevel : MonoBehaviour
+public class HighriseLevel : MonoBehaviour
 {
-    public List<GameObject> papers = new List<GameObject>();
-    public int paperCountToWin = 3;
+    private static HighriseLevel _instance;
 
-    private static FactoryLevel _instance;
-
-    public static FactoryLevel Instance { get { return _instance; } }
+    public static HighriseLevel Instance { get { return _instance; } }
 
     public Image fadeImage;
 
-    private void Awake()
-    {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            _instance = this;
-        }
-    }
-
-    public void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         StartCoroutine(FadeImage(true));
     }
 
-
-    public void AddPaper(Paper addedPaper)
+    // Update is called once per frame
+    void Update()
     {
-        foreach (GameObject paper in papers)
-        {
-            if (addedPaper.gameObject.GetInstanceID() == paper.GetInstanceID()) return;
-        }
-        papers.Add(addedPaper.gameObject);
-        addedPaper.gameObject.SetActive(false);
- 
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (papers.Count == paperCountToWin)
-        {
-            StartCoroutine(ChangeLevel());
-        }
+        
     }
 
     IEnumerator ChangeLevel()
