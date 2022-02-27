@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000017603876, g: 0.000000029145577, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.000017603921, g: 0.000000029148318, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10195,7 +10195,7 @@ MonoBehaviour:
   speaker: {fileID: 608758126}
   speakerWinSound: {fileID: 8300000, guid: 4918f472ba39d68469a0472b6a6b16ed, type: 3}
   cageAnimator: {fileID: 13778819}
-  failedPasswordSound: {fileID: 0}
+  failedPasswordSound: {fileID: 8300000, guid: be32d36814033f9438931d11cd27596a, type: 3}
 --- !u!4 &547168190
 Transform:
   m_ObjectHideFlags: 0
