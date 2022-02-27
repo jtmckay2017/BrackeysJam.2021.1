@@ -14,6 +14,8 @@ public class HighriseLevel : MonoBehaviour
     public List<GameObject> bodies = new List<GameObject>();
     public int bodyCountToWin = 8;
 
+
+
     private void Awake()
     {
         if (_instance != null && _instance != this)
