@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000017603921, g: 0.000000029148318, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.000017603876, g: 0.000000029145577, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1352,7 +1352,7 @@ Animator:
   m_GameObject: {fileID: 73252202}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: af81d4280822e3247a7aa0d24da8251b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9d5038baad5357a44a6a62a261a21cca, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2698,6 +2698,7 @@ GameObject:
   - component: {fileID: 142621226}
   - component: {fileID: 142621230}
   - component: {fileID: 142621229}
+  - component: {fileID: 142621231}
   m_Layer: 0
   m_Name: Button4
   m_TagString: Untagged
@@ -2814,6 +2815,25 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!95 &142621231
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142621224}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06337cc4d2c8843488657a32f3e92e92, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &142688166
 GameObject:
   m_ObjectHideFlags: 0
@@ -10175,6 +10195,7 @@ MonoBehaviour:
   speaker: {fileID: 608758126}
   speakerWinSound: {fileID: 8300000, guid: 4918f472ba39d68469a0472b6a6b16ed, type: 3}
   cageAnimator: {fileID: 13778819}
+  failedPasswordSound: {fileID: 0}
 --- !u!4 &547168190
 Transform:
   m_ObjectHideFlags: 0
@@ -13854,7 +13875,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786276659}
   m_LocalRotation: {x: 0.5000008, y: 0.49999923, z: 0.49999928, w: 0.5000007}
-  m_LocalPosition: {x: 0.0040071723, y: 0, z: 0.030022625}
+  m_LocalPosition: {x: -0.002, y: 0, z: 0.030022625}
   m_LocalScale: {x: 0.01666901, y: 0.07415553, z: 0.0038307123}
   m_Children: []
   m_Father: {fileID: 1242959480}
@@ -23747,6 +23768,7 @@ GameObject:
   - component: {fileID: 1296482842}
   - component: {fileID: 1296482846}
   - component: {fileID: 1296482845}
+  - component: {fileID: 1296482847}
   m_Layer: 0
   m_Name: Button3
   m_TagString: Untagged
@@ -23863,6 +23885,25 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!95 &1296482847
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296482840}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7b3b65bd5aec18a4189e203e660cae64, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1309261048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25134,6 +25175,7 @@ GameObject:
   - component: {fileID: 1355113698}
   - component: {fileID: 1355113702}
   - component: {fileID: 1355113701}
+  - component: {fileID: 1355113703}
   m_Layer: 0
   m_Name: Button5
   m_TagString: Untagged
@@ -25250,6 +25292,25 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!95 &1355113703
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355113696}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8d0a38f39f5e2f44481712a67aa7edc9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1361737027
 GameObject:
   m_ObjectHideFlags: 0
