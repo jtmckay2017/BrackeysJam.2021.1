@@ -17,6 +17,12 @@ public class HighriseLevel : MonoBehaviour
     public GameObject speaker;
     public AudioClip speakerWinSound;
     public Animator cageAnimator;
+    public AudioClip failedPasswordSound;
+
+    private int currentKeyIndex = 0;
+    private int[] password = { 5, 2, 4, 1, 3 };
+    private bool failed = false;
+    private bool passedKeyCodeTest = false;
 
     private void Awake()
     {
@@ -32,10 +38,25 @@ public class HighriseLevel : MonoBehaviour
 
     public void AddCode(int number)
     {
-        if (number == 2)
+        if (passedKeyCodeTest)
+        {
+            return;
+        }
+        if (number != password[currentKeyIndex])
+        {
+            failed = true;
+        }
+   
+        currentKeyIndex += 1;
+
+        if (currentKeyIndex >= password.Length && !failed)
         {
             AudioSource.PlayClipAtPoint(speakerWinSound, speaker.transform.position);
             cageAnimator.enabled = true;
+        } else if (currentKeyIndex >= password.Length && failed)
+        {
+            AudioSource.PlayClipAtPoint(failedPasswordSound, speaker.transform.position);
+            currentKeyIndex = 0;
         }
     }
 
