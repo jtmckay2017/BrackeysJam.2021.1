@@ -32,7 +32,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Button1 1
+  m_Name: Button4
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: button
@@ -265,7 +265,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 81e02fe1ab2b8b74a88647ec4a4df98b, type: 2}
+  m_Motion: {fileID: 7400000, guid: ba2cb6f387deef94d87e05e4b3448679, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

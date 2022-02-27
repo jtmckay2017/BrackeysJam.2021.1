@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000017603921, g: 0.000000029148318, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.000017603876, g: 0.000000029145577, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1242,7 +1242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73252202}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09738207, y: 0.91018707, z: 0.18607925}
+  m_LocalPosition: {x: 0.09738207, y: 0.9101871, z: 0.1860792}
   m_LocalScale: {x: 0.1203125, y: 0.40517214, z: 0.13381864}
   m_Children:
   - {fileID: 1729300835}
@@ -1353,7 +1353,7 @@ Animator:
   m_GameObject: {fileID: 73252202}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: af81d4280822e3247a7aa0d24da8251b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9d5038baad5357a44a6a62a261a21cca, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2699,6 +2699,7 @@ GameObject:
   - component: {fileID: 142621226}
   - component: {fileID: 142621230}
   - component: {fileID: 142621229}
+  - component: {fileID: 142621231}
   m_Layer: 0
   m_Name: Button4
   m_TagString: Untagged
@@ -2714,7 +2715,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142621224}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09738207, y: 0.91018707, z: -0.21739051}
+  m_LocalPosition: {x: 0.09738207, y: 0.9101871, z: -0.219}
   m_LocalScale: {x: 0.1203125, y: 0.40517214, z: 0.13381864}
   m_Children:
   - {fileID: 2111317292}
@@ -2815,6 +2816,25 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!95 &142621231
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142621224}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06337cc4d2c8843488657a32f3e92e92, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &142688166
 GameObject:
   m_ObjectHideFlags: 0
@@ -20128,7 +20148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1116578511
 Transform:
   m_ObjectHideFlags: 0
@@ -23872,6 +23892,7 @@ GameObject:
   - component: {fileID: 1296482842}
   - component: {fileID: 1296482846}
   - component: {fileID: 1296482845}
+  - component: {fileID: 1296482847}
   m_Layer: 0
   m_Name: Button3
   m_TagString: Untagged
@@ -23887,7 +23908,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296482840}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09738207, y: 0.91018707, z: -0.021023754}
+  m_LocalPosition: {x: 0.09738207, y: 0.9101871, z: -0.02102375}
   m_LocalScale: {x: 0.1203125, y: 0.40517214, z: 0.13381864}
   m_Children:
   - {fileID: 1082501080}
@@ -23988,6 +24009,25 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!95 &1296482847
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296482840}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7b3b65bd5aec18a4189e203e660cae64, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1309261048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25259,6 +25299,7 @@ GameObject:
   - component: {fileID: 1355113698}
   - component: {fileID: 1355113702}
   - component: {fileID: 1355113701}
+  - component: {fileID: 1355113703}
   m_Layer: 0
   m_Name: Button5
   m_TagString: Untagged
@@ -25274,7 +25315,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1355113696}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09738207, y: 0.91018707, z: -0.4034689}
+  m_LocalPosition: {x: 0.09738207, y: 0.9101871, z: -0.4034689}
   m_LocalScale: {x: 0.1203125, y: 0.40517214, z: 0.13381864}
   m_Children:
   - {fileID: 14805715}
@@ -25375,6 +25416,25 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!95 &1355113703
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355113696}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8d0a38f39f5e2f44481712a67aa7edc9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1361737027
 GameObject:
   m_ObjectHideFlags: 0
