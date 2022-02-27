@@ -17,7 +17,7 @@ public class UIManagerLevel2 : MonoBehaviour
     {
         if (HighriseLevel.Instance.bodies.Count != HighriseLevel.Instance.bodyCountToWin)
         {
-            bodyText.text = $"Bodies Fed {HighriseLevel.Instance.bodies.Count} / {HighriseLevel.Instance.bodyCountToWin}";
+            bodyText.text = $"Employees reprimanded {HighriseLevel.Instance.bodies.Count} / {HighriseLevel.Instance.bodyCountToWin}";
         }
         else
         {
