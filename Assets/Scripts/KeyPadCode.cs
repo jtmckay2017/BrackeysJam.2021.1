@@ -26,6 +26,7 @@ public class KeyPadCode : OutlinedInteractable
     {
         _anim.SetTrigger("button");
         AudioSource.PlayClipAtPoint(buttonClickSound, transform.position);
+        HighriseLevel.Instance.AddCode(keyValue);
     }
 
    
