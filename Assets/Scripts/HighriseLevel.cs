@@ -42,6 +42,7 @@ public class HighriseLevel : MonoBehaviour
         {
             return;
         }
+
         if (number != password[currentKeyIndex])
         {
             failed = true;
@@ -57,6 +58,7 @@ public class HighriseLevel : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(failedPasswordSound, speaker.transform.position);
             currentKeyIndex = 0;
+            failed = false;
         }
     }
 

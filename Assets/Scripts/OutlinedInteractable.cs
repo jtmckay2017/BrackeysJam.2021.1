@@ -24,7 +24,6 @@ public class OutlinedInteractable : Interactable
 
     public override void OnFocus()
     {
-        Debug.Log(_outline);
         _outline.OutlineWidth = outlineWidth;
     }
 
