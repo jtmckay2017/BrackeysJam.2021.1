@@ -14,7 +14,9 @@ public class HighriseLevel : MonoBehaviour
     public List<GameObject> bodies = new List<GameObject>();
     public int bodyCountToWin = 8;
 
-
+    public GameObject speaker;
+    public AudioClip speakerWinSound;
+    public Animator cageAnimator;
 
     private void Awake()
     {
@@ -25,6 +27,15 @@ public class HighriseLevel : MonoBehaviour
         else
         {
             _instance = this;
+        }
+    }
+
+    public void AddCode(int number)
+    {
+        if (number == 2)
+        {
+            AudioSource.PlayClipAtPoint(speakerWinSound, speaker.transform.position);
+            cageAnimator.enabled = true;
         }
     }
 
